@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 		del = require('del'),
 		sass = require('gulp-sass'),
 		jade = require('gulp-jade'),
+		connect = require('gulp-connect'),
 		include = require('gulp-file-include'),
 		spritesmith  = require('gulp.spritesmith'),
 		cssbeautify = require('gulp-cssbeautify'),
@@ -9,10 +10,19 @@ var gulp = require('gulp'),
 
 var outputDir = 'build';
 
+gulp.task('connect', function () {
+	connect.server({
+		root: ['./build'],
+		port: '8080',
+		livereload: true
+	});
+});
+
 // Scripts
 gulp.task('js', function() {
 	return gulp.src('src/js/**/*.js')
-		.pipe(gulp.dest(outputDir + '/js'));
+		.pipe(gulp.dest(outputDir + '/js'))
+		.pipe(connect.reload());
 });
 
 // Fonts
@@ -30,7 +40,7 @@ gulp.task('jade', function() {
 			pretty: true
 		}))
 		.pipe(gulp.dest(outputDir))
-		// .pipe(connect.reload())
+		.pipe(connect.reload());
 });
 
 // Styles
@@ -44,7 +54,8 @@ gulp.task('sass', function () {
 			browsers: ['last 2 version', '> 1%', 'Firefox ESR', 'Opera 12.1', 'ie 8' ],
 			cascade: false
 		}))
-		.pipe(gulp.dest(outputDir + '/css'));
+		.pipe(gulp.dest(outputDir + '/css'))
+		.pipe(connect.reload());
 });
 
 // Images
@@ -95,4 +106,4 @@ gulp.task('watch', function() {
 gulp.task('build', [ 'sprite', 'jade', 'fonts', 'sass', 'js', 'img' ]);
 
 // Default task
-gulp.task('default', [ 'sprite', 'jade', 'fonts', 'js', 'img', 'sass', 'watch']);
+gulp.task('default', [ 'sprite', 'jade', 'fonts', 'js', 'img', 'sass', 'connect', 'watch']);
