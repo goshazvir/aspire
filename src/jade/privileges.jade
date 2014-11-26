@@ -1,0 +1,112 @@
+- var titleMod = { title: 'privileges' }; 
+- var session = { locale: '' }
+
+doctype html
+
+html
+	include includes/head.jade 
+	body
+		.out
+				header.header
+					.header-in
+						a.logo(href="#") Aspire
+						nav
+							a(href="#") компания
+							a(href="#").is-active.pulse.animated.s05 Привилегии
+							a(href="uslugi1.html") услуги
+							a(href="#") Newsletter
+							a(href="#") Обратная связь
+				.page
+					.page-small
+						.services
+							.services-meta-mod.bounceInDown.animated.s1
+								h1 Привилегии
+							.select-wrap.fadeIn.animated.s15
+								.select.js-select
+									span.select-value
+										em.js-select-text Путешествия
+										i
+									input.js-select-input(type="hidden", val="", value="Путешествия")
+									.select-drop.js-select-drop
+										ul
+											li.is-selected(data-id="1") Путешествия
+											li(data-id="2") Путешествия 2
+											li(data-id="3") Путешествия 3
+											li(data-id="4") Путешествия 4
+								.select.js-select
+									span.select-value
+										em.js-select-text в России
+										i
+									input.js-select-input(type="hidden", val="", value="в России")
+									.select-drop.js-select-drop
+										ul
+											li.is-selected(data-id="1") в России
+											li(data-id="2") в России 2
+											li(data-id="3") в России 3
+											li(data-id="4") в России 4
+								.select.js-select
+									span.select-value
+										em.js-select-text Во городах
+										i
+									input.js-select-input(type="hidden", val="", value="Во городах")
+									.select-drop.js-select-drop
+										ul
+											li.is-selected(data-id="1") Во городах
+											li(data-id="2") Анадырь
+											li(data-id="3") Москва
+											li(data-id="4") Питер
+											li(data-id="5") Геленджик
+											li(data-id="6") Красноярск
+											li(data-id="7") Тюмень
+											li(data-id="8") Владивосток
+											li(data-id="9") Норильск
+							.services-items
+								a.services-item.flipInY.animated.s15(href="#")
+									.services-media
+										img(src="img/img21.jpg", alt="")
+									h4.services-title На яхте по охотскому морю
+									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore
+								a.services-item.flipInY.animated.s1(href="#")
+									.services-media
+										img(src="img/img22.jpg", alt="")
+									h4.services-title На северный полюс
+									.services-content dolor sit amet, consectetur sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim minim
+								a.services-item.flipInY.animated.s2(href="#")
+									.services-media
+										img(src="img/img23.jpg", alt="")
+									h4.services-title горный алтай
+									.services-content labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								a.services-item.flipInY.animated.s2(href="#")
+									.services-media
+										img(src="img/img24.jpg", alt="")
+									h4.services-title путешествие на чукотку
+									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore
+								a.services-item.flipInY.animated.s15(href="#")
+									.services-media
+										img(src="img/img25.jpg", alt="")
+									h4.services-title охота в тайге
+									.services-content veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+								a.services-item.flipInY.animated.s1(href="#")
+									.services-media
+										img(src="img/img26.jpg", alt="")
+									h4.services-title трофи по кольскому полуострову
+									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore
+						ul.social.fadeIn.animated.s2
+							li.social-item
+								a(href="#").social-link.fb
+									i.ico.i-fb
+									span лайк
+							li.social-item
+								a(href="#").social-link.vk
+									i.ico.i-vk
+									span нравится
+							li.social-item
+								a(href="#").social-link.tw
+									i.ico.i-tw
+									span ретвит
+							li.social-item
+								a(href="#").social-link.gp
+									i.ico.i-gp
+									span + 1
+						p.note.bounceIn.animated.s1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+		script(data-headjs-load='js/init.js', src='js/lib/head.js')

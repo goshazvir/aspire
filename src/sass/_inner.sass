@@ -1,0 +1,228 @@
+// SERVICES
+// ===============================================
+.services
+	.services-meta
+		margin-bottom: 30px
+		text-align: center
+	.services-meta-mod
+		margin-bottom: 0px
+		text-align: center
+	.services-in
+		color: red
+	.services-items
+		font-size: 0
+		margin-left: -50px
+		margin-bottom: 30px
+	.services-item
+		width: 253px
+		margin-bottom: 30px
+		margin-left: 50px
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		font-size: 14px
+		color: #000
+		text-decoration: none
+	a.services-item
+		&:hover
+			text-decoration: underline
+			.services-title
+				text-decoration: underline
+			// .services-media
+	.services-media
+		display: inline-block
+		width: 180px
+		height: 180px
+		border-radius: 50%
+		overflow: hidden
+		margin-bottom: 10px
+		img
+			border-radius: 50%
+	.services-title
+		margin-bottom: 10px
+		+narrowBold
+	.services-content
+		padding: 0 10px
+		+tahoma
+		line-height: 18px
+// SOCIAL
+// ===============================================
+.social
+	margin-bottom: 15px
+	text-align: center
+	&.m-small
+		.social-item
+			width: 136px
+			margin-left: 26px
+	.social-item
+		display: inline-block
+		vertical-align: middle
+		width: 149px
+		margin-left: 30px
+		&:first-child
+			margin-left: 0
+	.social-link
+		display: block
+		height: 38px
+		line-height: 34px
+		border-radius: 4px
+		text-align: center
+		text-decoration: none
+		transition: all 0.2s ease
+		&:hover
+			opacity: 0.8
+			transition: all 0.2s ease
+		&:active
+			position: relative
+			top: 1px
+		&.fb
+			background: #3757a1
+		&.vk
+			background: #3a5f8b
+			.ico
+				margin-top: 2px
+		&.tw
+			background: #33ccff
+			.ico
+				margin-top: 5px
+		&.gp
+			background: #dc4b37
+			.ico
+				margin-top: 5px
+		.ico
+			margin-right: 10px
+			display: inline-block
+			vertical-align: middle
+		span
+			display: inline-block
+			vertical-align: middle
+			+myriadPro
+			font-size: 20px
+			color: #FFF
+
+.note
+	margin-bottom: 25px
+	font-size: 11px
+	line-height: 1.4 
+	color: #606060
+.detail
+	margin-bottom: 15px
+	font-size: 16px
+	line-height: 1.4 
+	font-style: italic
+.send
+	display: block
+	padding: 5px 0
+	border-radius: 5px
+	background-color: #ef2a56
+	background-image: linear-gradient(bottom, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%)
+	border-bottom: 5px solid #d51741 
+	+narrowBold
+	font-size: 16px
+	text-transform: uppercase
+	color: #FFF
+	text-decoration: none
+	text-align: center
+	text-shadow: 0 -1px 2px #9e0029
+	&:hover
+		background-image: linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,.18) 100%)
+	&:active
+		position: relative
+		top: 1px
+
+// SELECT
+// ===============================================
+.select-wrap
+	margin-bottom: 20px
+	text-align: center
+	.select
+		margin-left: 20px
+		&:first-child
+			margin-left: 0
+
+.select
+	display: inline-block
+	font-size: 26px
+	color: #fa1749
+	cursor: pointer
+	position: relative
+	&.is-open
+		border-radius: 3px 3px 0 0
+		box-shadow: 0 4px 10px rgba(0,0,0,.12)
+		&:before	
+			content: ""
+			height: 4px
+			background: #fff 
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0px
+			z-index: 1111
+	span
+		padding: 7px 30px 12px 15px
+		display: block
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+	em
+		font-style: normal
+	i
+		content: ""
+		position: absolute
+		top: 20px
+		right: 13px
+		+s($s-select-arr)
+	&.is-open
+		.select-drop
+			display: block
+	.select-drop
+		display: none
+		position: absolute
+		max-height: 360px
+		overflow: auto 
+		top: 100%
+		left: 0px
+		right: 0px
+		z-index: 666
+		background: #FFF
+		border-radius: 0 0 3px 3px
+		box-shadow: 0 4px 10px rgba(0,0,0,.12)
+	ul
+		margin: 0
+		padding: 0 0 10px
+	li
+		padding: 3px 15px 5px
+		font-size: 21px
+		&:hover
+			cursor: pointer
+			color: #E2231B 
+		span
+			padding: 0
+// gallery
+// ===============================================
+.gallery
+	position: relative
+	.gallery-back
+		+s($s-back)
+		position: absolute
+		top: 25px
+		left: 45px
+		z-index: 666
+		cursor: pointer
+	.gallery-item
+		width: 100%
+		height: 380px
+		+cover
+		box-shadow: inset 0px 2px 6px rgba(0,0,0,.13)
+	.gallery-prev, .gallery-next
+		position: absolute
+		top: 50%
+		margin-top: -36px
+		z-index: 666
+		cursor: pointer
+	.gallery-prev
+		+s($s-slider-prev)
+		left: 30px
+	.gallery-next
+		+s($s-slider-next)
+		right: 30px

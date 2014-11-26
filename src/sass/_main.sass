@@ -1,5 +1,26 @@
 // VAR
 // ===============================================
+$default-transition-duration: 0.2s
+$black: #232324
+%wrap
+	width: 940px
+	padding: 0 10px
+	margin-left: auto
+	margin-right: auto 
+%wrap-small
+	width: 860px
+	padding: 0 60px
+	margin-left: auto
+	margin-right: auto
+	
+.s05
+	animation-duration: 0.5s
+.s1
+	animation-duration: 1s
+.s15
+	animation-duration: 1.5s
+.s2
+	animation-duration: 2s
 
 
 //	GENERAL
@@ -8,8 +29,89 @@
  * GENERAL 
  */  
 body
-	+os 
-	font-size: 15px 
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 14px 
 	line-height: 1.2
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: antialiased
+// TYPOGRAPHY
+// ===============================================
+.h1, h1
+	margin-bottom: 10px
+	+helveticaCyBold
+	font-size: 32px
+	text-transform: uppercase
+	color: #000
+.h4, h4
+	font-size: 18px
+	text-transform: uppercase
+	color: #3f4041
+	+narrow 
+// HEADER
+// ===============================================
+.header
+	padding: 10px 0
+	margin-bottom: 20px
+	box-shadow: 0 2px 6px rgba(0,0,0,.13)
+	&.m-mod
+		margin-bottom: 0
+	.header-in
+		@extend %wrap-small
+	.logo
+		display: inline-block
+		vertical-align: middle
+		+s($s-logo)
+		+hide-text
+nav
+	display: inline-block
+	vertical-align: middle
+	a, span
+		margin-left: 25px
+		+helveticaCyPlain
+		text-transform: uppercase
+		font-size: 18px
+		color: $black
+		text-decoration: none
+		transition: all 0.2s ease
+		&.is-active
+			+helveticaCyBold
+			text-decoration: underline
+			&:hover
+				opacity: 1 
+		&:hover
+			transition: all 0.2s ease
+			opacity: 0.8
+// PAGE
+// ===============================================
+.page
+	.page-small
+		@extend %wrap-small
+		overflow: hidden
+
+.page-l
+	font-size: 0
+	&.m-margin
+		margin-top: 50px
+	h1, .h1
+		margin-bottom: 15px
+	.page-l-content
+		width: 640px
+		margin-right: 20px
+		display: inline-block
+		vertical-align: top
+		font-size: 18px
+	.page-l-sidebar
+		width: 160px
+		display: inline-block
+		vertical-align: top
+		font-size: 16px
+
+.content
+	font-family: 'Times New Roman', Times, serif
+	p
+		margin-bottom: 15px
+		&.lead
+			margin-bottom: 25px
+	
+
+
