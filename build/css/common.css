@@ -3223,12 +3223,314 @@ Copyright (c) 2014 Daniel Eden
 /*
  * FONTS
  */
+@font-face {
+  font-family: "helveticacybold";
+  src: url("../fonts/helveticacybold.eot");
+  src: url("../fonts/helveticacybold.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticacybold.woff") format("woff"), url("../fonts/helveticacybold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticacyplain";
+  src: url("../fonts/helveticacyplain.eot");
+  src: url("../fonts/helveticacyplain.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticacyplain.woff") format("woff"), url("../fonts/helveticacyplain.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro-SemiCn";
+  src: url("../fonts/MyriadPro-SemiCn.eot");
+  src: url("../fonts/MyriadPro-SemiCn.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-SemiCn.woff") format("woff"), url("../fonts/MyriadPro-SemiCn.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.i-fb {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -49px;
+  width: 10px;
+  height: 19px;
+}
+
+.i-vk {
+  background-image: url("../img/sprite.png");
+  background-position: -15px -49px;
+  width: 14px;
+  height: 18px;
+}
+
+.i-tw {
+  background-image: url("../img/sprite.png");
+  background-position: -61px -49px;
+  width: 21px;
+  height: 16px;
+}
+
+.i-gp {
+  background-image: url("../img/sprite.png");
+  background-position: -34px -49px;
+  width: 22px;
+  height: 17px;
+}
+
+.header .header-in, .page .page-small {
+  width: 860px;
+  padding: 0 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.s05 {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.s1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.s15 {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.s2 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
 /*
  * GENERAL
  */
 body {
-  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
+}
+
+.h1, h1 {
+  margin-bottom: 10px;
+  font-family: "HelveticaCYBold", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.h4, h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #3f4041;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13);
+}
+
+.header .logo {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/sprite.png");
+  background-position: 0px 0px;
+  width: 121px;
+  height: 44px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a, nav span {
+  margin-left: 25px;
+  font-family: "HelveticaCYPlain", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #232324;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+nav a.is-active, nav span.is-active {
+  font-family: "HelveticaCYBold", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+nav a.is-active:hover, nav span.is-active:hover {
+  opacity: 1;
+}
+
+nav a:hover, nav span:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+}
+
+.page .page-small {
+  overflow: hidden;
+}
+
+.services .services-meta {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services .services-in {
+  color: red;
+}
+
+.services .services-items {
+  font-size: 0;
+  margin-left: -50px;
+  margin-bottom: 30px;
+}
+
+.services .services-item {
+  width: 253px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.services a.services-item:hover {
+  opacity: 0.5;
+  -webkit-animation-name: none;
+}
+
+.services .services-media {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.services .services-media img {
+  border-radius: 50%;
+}
+
+.services .services-title {
+  margin-bottom: 10px;
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.services .services-content {
+  padding: 0 10px;
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 18px;
+}
+
+.social {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.social .social-item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 149px;
+  margin-left: 30px;
+}
+
+.social .social-item:first-child {
+  margin-left: 0;
+}
+
+.social .social-link {
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.social .social-link:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.social .social-link:active {
+  position: relative;
+  top: 1px;
+}
+
+.social .social-link.fb {
+  background: #3757a1;
+}
+
+.social .social-link.vk {
+  background: #3a5f8b;
+}
+
+.social .social-link.vk .ico {
+  margin-top: 2px;
+}
+
+.social .social-link.tw {
+  background: #33ccff;
+}
+
+.social .social-link.tw .ico {
+  margin-top: 5px;
+}
+
+.social .social-link.gp {
+  background: #dc4b37;
+}
+
+.social .social-link.gp .ico {
+  margin-top: 5px;
+}
+
+.social .social-link .ico {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social .social-link span {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "MyriadProSemiCn", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.note {
+  margin-bottom: 25px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #606060;
 }
