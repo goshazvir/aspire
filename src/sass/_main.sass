@@ -53,6 +53,8 @@ body
 	padding: 10px 0
 	margin-bottom: 20px
 	box-shadow: 0 2px 6px rgba(0,0,0,.13)
+	&.m-mod
+		margin-bottom: 0
 	.header-in
 		@extend %wrap-small
 	.logo
@@ -85,6 +87,31 @@ nav
 	.page-small
 		@extend %wrap-small
 		overflow: hidden
+
+.page-l
+	font-size: 0
+	&.m-margin
+		margin-top: 50px
+	h1, .h1
+		margin-bottom: 15px
+	.page-l-content
+		width: 640px
+		margin-right: 20px
+		display: inline-block
+		vertical-align: top
+		font-size: 18px
+	.page-l-sidebar
+		width: 160px
+		display: inline-block
+		vertical-align: top
+		font-size: 16px
+
+.content
+	font-family: 'Times New Roman', Times, serif
+	p
+		margin-bottom: 15px
+		&.lead
+			margin-bottom: 25px
 	
 
 

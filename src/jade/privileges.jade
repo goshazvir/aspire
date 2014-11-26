@@ -13,60 +13,84 @@ html
 						nav
 							a(href="#") компания
 							a(href="#").is-active.pulse.animated.s05 Привилегии
-							a(href="#") услуги
+							a(href="uslugi1.html") услуги
 							a(href="#") Newsletter
 							a(href="#") Обратная связь
 				.page
 					.page-small
 						.services
-							.services-meta.bounceInDown.animated.s1
+							.services-meta-mod.bounceInDown.animated.s1
 								h1 Привилегии
+							.select-wrap.fadeIn.animated.s15
+								.select.js-select
+									span.select-value
+										em.js-select-text Путешествия
+										i
+									input.js-select-input(type="hidden", val="", value="Путешествия")
+									.select-drop.js-select-drop
+										ul
+											li.is-selected(data-id="1") Путешествия
+											li(data-id="2") Путешествия 2
+											li(data-id="3") Путешествия 3
+											li(data-id="4") Путешествия 4
+								.select.js-select
+									span.select-value
+										em.js-select-text в России
+										i
+									input.js-select-input(type="hidden", val="", value="в России")
+									.select-drop.js-select-drop
+										ul
+											li.is-selected(data-id="1") в России
+											li(data-id="2") в России 2
+											li(data-id="3") в России 3
+											li(data-id="4") в России 4
+								.select.js-select
+									span.select-value
+										em.js-select-text Во городах
+										i
+									input.js-select-input(type="hidden", val="", value="Во городах")
+									.select-drop.js-select-drop
+										ul
+											li.is-selected(data-id="1") Во городах
+											li(data-id="2") Анадырь
+											li(data-id="3") Москва
+											li(data-id="4") Питер
+											li(data-id="5") Геленджик
+											li(data-id="6") Красноярск
+											li(data-id="7") Тюмень
+											li(data-id="8") Владивосток
+											li(data-id="9") Норильск
 							.services-items
 								a.services-item.flipInY.animated.s15(href="#")
 									.services-media
-										img(src="img/img1.jpg", alt="")
-									h4.services-title аренда яхт
+										img(src="img/img21.jpg", alt="")
+									h4.services-title На яхте по охотскому морю
 									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore
-								a.services-item.flipInY.animated.s2(href="#")
+								a.services-item.flipInY.animated.s1(href="#")
 									.services-media
-										img(src="img/img2.jpg", alt="")
-									h4.services-title путешествия
+										img(src="img/img22.jpg", alt="")
+									h4.services-title На северный полюс
 									.services-content dolor sit amet, consectetur sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim minim
-								a.services-item.flipInY.animated.s1(href="#")
+								a.services-item.flipInY.animated.s2(href="#")
 									.services-media
-										img(src="img/img3.jpg", alt="")
-									h4.services-title визы шенген
+										img(src="img/img23.jpg", alt="")
+									h4.services-title горный алтай
 									.services-content labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-								a.services-item.flipInY.animated.s1(href="#")
+								a.services-item.flipInY.animated.s2(href="#")
 									.services-media
-										img(src="img/img4.jpg", alt="")
-									h4.services-title vip обслуживание в аэропорту
+										img(src="img/img24.jpg", alt="")
+									h4.services-title путешествие на чукотку
 									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore
 								a.services-item.flipInY.animated.s15(href="#")
 									.services-media
-										img(src="img/img5.jpg", alt="")
-									h4.services-title такси
+										img(src="img/img25.jpg", alt="")
+									h4.services-title охота в тайге
 									.services-content veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-								a.services-item.flipInY.animated.s2(href="#")
-									.services-media
-										img(src="img/img6.jpg", alt="")
-									h4.services-title ЕДА. ВИНО. ПУТЕШЕСТВИЯ. LONG WEEKEND
-									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore
 								a.services-item.flipInY.animated.s1(href="#")
 									.services-media
-										img(src="img/img7.jpg", alt="")
-									h4.services-title ЭКСКЛЮЗИВНЫЙ ОТДЫХ
+										img(src="img/img26.jpg", alt="")
+									h4.services-title трофи по кольскому полуострову
 									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore
-								a.services-item.flipInY.animated.s15(href="#")
-									.services-media
-										img(src="img/img8.jpg", alt="")
-									h4.services-title мероприятия и выставки
-									.services-content veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-								a.services-item.flipInY.animated.s2(href="#")
-									.services-media
-										img(src="img/img9.jpg", alt="")
-									h4.services-title ПРИВИЛЕГИИ В ЛУЧШИХ ОТЕЛЯХ МИРА
-									.services-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore 
 						ul.social.fadeIn.animated.s2
 							li.social-item
 								a(href="#").social-link.fb

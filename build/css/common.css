@@ -53,6 +53,11 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2014 Daniel Eden
 */
+.flipInY {
+  position: relative;
+  z-index: 1;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -3249,28 +3254,28 @@ Copyright (c) 2014 Daniel Eden
 
 .i-fb {
   background-image: url("../img/sprite.png");
-  background-position: 0px -49px;
+  background-position: -83px -49px;
   width: 10px;
   height: 19px;
 }
 
 .i-vk {
   background-image: url("../img/sprite.png");
-  background-position: -15px -49px;
+  background-position: -98px -49px;
   width: 14px;
   height: 18px;
 }
 
 .i-tw {
   background-image: url("../img/sprite.png");
-  background-position: -61px -49px;
+  background-position: -236px -22px;
   width: 21px;
   height: 16px;
 }
 
 .i-gp {
   background-image: url("../img/sprite.png");
-  background-position: -34px -49px;
+  background-position: -209px -22px;
   width: 22px;
   height: 17px;
 }
@@ -3338,11 +3343,15 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13);
 }
 
+.header.m-mod {
+  margin-bottom: 0;
+}
+
 .header .logo {
   display: inline-block;
   vertical-align: middle;
   background-image: url("../img/sprite.png");
-  background-position: 0px 0px;
+  background-position: -83px 0px;
   width: 121px;
   height: 44px;
   text-indent: -9999px;
@@ -3388,8 +3397,52 @@ nav a:hover, nav span:hover {
   overflow: hidden;
 }
 
+.page-l {
+  font-size: 0;
+}
+
+.page-l.m-margin {
+  margin-top: 50px;
+}
+
+.page-l h1, .page-l .h1 {
+  margin-bottom: 15px;
+}
+
+.page-l .page-l-content {
+  width: 640px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.page-l .page-l-sidebar {
+  width: 160px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.content {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+.content p.lead {
+  margin-bottom: 25px;
+}
+
 .services .services-meta {
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.services .services-meta-mod {
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -3416,8 +3469,11 @@ nav a:hover, nav span:hover {
 }
 
 .services a.services-item:hover {
-  opacity: 0.5;
-  -webkit-animation-name: none;
+  text-decoration: underline;
+}
+
+.services a.services-item:hover .services-title {
+  text-decoration: underline;
 }
 
 .services .services-media {
@@ -3451,6 +3507,11 @@ nav a:hover, nav span:hover {
   text-align: center;
 }
 
+.social.m-small .social-item {
+  width: 136px;
+  margin-left: 26px;
+}
+
 .social .social-item {
   display: inline-block;
   vertical-align: middle;
@@ -3465,7 +3526,7 @@ nav a:hover, nav span:hover {
 .social .social-link {
   display: block;
   height: 38px;
-  line-height: 38px;
+  line-height: 34px;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -3533,4 +3594,186 @@ nav a:hover, nav span:hover {
   font-size: 11px;
   line-height: 1.4;
   color: #606060;
+}
+
+.detail {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.send {
+  display: block;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: #ef2a56;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 100%);
+  border-bottom: 5px solid #d51741;
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0 -1px 2px #9e0029;
+}
+
+.send:hover {
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 100%);
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 100%);
+}
+
+.send:active {
+  position: relative;
+  top: 1px;
+}
+
+.select-wrap {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.select-wrap .select {
+  margin-left: 20px;
+}
+
+.select-wrap .select:first-child {
+  margin-left: 0;
+}
+
+.select {
+  display: inline-block;
+  font-size: 26px;
+  color: #fa1749;
+  cursor: pointer;
+  position: relative;
+}
+
+.select.is-open {
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.select.is-open:before {
+  content: "";
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 1111;
+}
+
+.select span {
+  padding: 7px 30px 12px 15px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.select em {
+  font-style: normal;
+}
+
+.select i {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  background-image: url("../img/sprite.png");
+  background-position: -262px -22px;
+  width: 13px;
+  height: 10px;
+}
+
+.select.is-open .select-drop {
+  display: block;
+}
+
+.select .select-drop {
+  display: none;
+  position: absolute;
+  max-height: 360px;
+  overflow: auto;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  z-index: 666;
+  background: #FFF;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.select ul {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.select li {
+  padding: 3px 15px 5px;
+  font-size: 21px;
+}
+
+.select li:hover {
+  cursor: pointer;
+  color: #E2231B;
+}
+
+.select li span {
+  padding: 0;
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery .gallery-back {
+  background-image: url("../img/sprite.png");
+  background-position: -209px 0px;
+  width: 214px;
+  height: 17px;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+  z-index: 666;
+  cursor: pointer;
+}
+
+.gallery .gallery-item {
+  width: 100%;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.13);
+}
+
+.gallery .gallery-prev, .gallery .gallery-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -36px;
+  z-index: 666;
+  cursor: pointer;
+}
+
+.gallery .gallery-prev {
+  background-image: url("../img/sprite.png");
+  background-position: -41px 0px;
+  width: 37px;
+  height: 73px;
+  left: 30px;
+}
+
+.gallery .gallery-next {
+  background-image: url("../img/sprite.png");
+  background-position: 0px 0px;
+  width: 36px;
+  height: 73px;
+  right: 30px;
 }
