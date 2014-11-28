@@ -3437,6 +3437,19 @@ nav a:hover, nav span:hover {
   margin-bottom: 5px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: #008ff3;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .services .services-meta {
   margin-bottom: 30px;
   text-align: center;
@@ -3602,6 +3615,10 @@ nav a:hover, nav span:hover {
   font-size: 15px;
   line-height: 1.4;
   font-style: italic;
+}
+
+.detail.m-small {
+  font-size: 14px;
 }
 
 .detail p {
