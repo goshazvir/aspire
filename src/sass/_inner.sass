@@ -206,6 +206,8 @@
 // gallery
 // ===============================================
 .gallery
+	height: 380px
+	overflow: hidden
 	position: relative
 	.gallery-back
 		+s($s-back)
@@ -226,19 +228,24 @@
 		height: 380px
 		+cover
 		box-shadow: inset 0px 2px 6px rgba(0,0,0,.13)
-		.gallery-item-title
-			width: 100%
-			position: absolute
-			top: 10px
-			color: #000 
-			font-size: 32px
-			text-transform: uppercase
-			text-align: center
-			+helveticaCyBold
-			.gallery-item-title-in
-				display: inline-block
-				padding: 0 5px
-				background: #FFF
+	.gallery-meta
+		width: 100%
+		position: absolute
+		top: 10px
+		z-index: 666
+		color: #000 
+		font-size: 32px
+		text-transform: uppercase
+		text-align: center
+		+helveticaCyBold
+		&.m-transparent
+			.gallery-meta-in
+				background: transparent
+				color: #FFF  
+		.gallery-meta-in
+			display: inline-block
+			padding: 0 5px
+			background: #FFF
 	.gallery-prev, .gallery-next
 		position: absolute
 		top: 50%
@@ -251,3 +258,41 @@
 	.gallery-next
 		+s($s-slider-next)
 		right: 30px
+// map
+// ===============================================
+.map-item
+	height: 100%
+.map
+	height: 535px
+	position: relative
+	&.m-small
+		height: 385px
+	.map-note
+		width: 100%
+		position: absolute
+		top: 20px
+		z-index: 666
+		text-align: center
+		.map-note-in
+			padding: 6px 15px
+			display: inline-block
+			background-color: #fff
+			box-shadow: 0 3px 7px rgba(0,0,0,.17)
+		.map-note-span, .map-note-link
+			display: inline-block
+			+narrow
+		.map-note-span
+			font-size: 24px
+			color: #000 
+		.map-note-link
+			font-size: 24px
+			color: #f11764
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	.map-in
+		height: 535px
+		overflow: hidden
+		img
+			max-width: 100% 
+		

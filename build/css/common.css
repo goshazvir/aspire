@@ -3431,6 +3431,11 @@ nav a:hover, nav span:hover {
   margin-bottom: 25px;
 }
 
+.content p.section {
+  padding: 0 30px;
+  font-size: 24px;
+}
+
 .content img {
   max-width: 100%;
   margin-top: -10px;
@@ -3754,6 +3759,8 @@ a:hover {
 }
 
 .gallery {
+  height: 380px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -3790,10 +3797,11 @@ a:hover {
   box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.13);
 }
 
-.gallery .gallery-item .gallery-item-title {
+.gallery .gallery-meta {
   width: 100%;
   position: absolute;
   top: 10px;
+  z-index: 666;
   color: #000;
   font-size: 32px;
   text-transform: uppercase;
@@ -3803,7 +3811,12 @@ a:hover {
   font-style: normal;
 }
 
-.gallery .gallery-item .gallery-item-title .gallery-item-title-in {
+.gallery .gallery-meta.m-transparent .gallery-meta-in {
+  background: transparent;
+  color: #FFF;
+}
+
+.gallery .gallery-meta .gallery-meta-in {
   display: inline-block;
   padding: 0 5px;
   background: #FFF;
@@ -3831,4 +3844,63 @@ a:hover {
   width: 36px;
   height: 73px;
   right: 30px;
+}
+
+.map-item {
+  height: 100%;
+}
+
+.map {
+  height: 535px;
+  position: relative;
+}
+
+.map.m-small {
+  height: 385px;
+}
+
+.map .map-note {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  z-index: 666;
+  text-align: center;
+}
+
+.map .map-note .map-note-in {
+  padding: 6px 15px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.17);
+}
+
+.map .map-note .map-note-span, .map .map-note .map-note-link {
+  display: inline-block;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.map .map-note .map-note-span {
+  font-size: 24px;
+  color: #000;
+}
+
+.map .map-note .map-note-link {
+  font-size: 24px;
+  color: #f11764;
+  text-decoration: none;
+}
+
+.map .map-note .map-note-link:hover {
+  text-decoration: underline;
+}
+
+.map .map-in {
+  height: 535px;
+  overflow: hidden;
+}
+
+.map .map-in img {
+  max-width: 100%;
 }
