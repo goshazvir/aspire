@@ -28,7 +28,6 @@
 			text-decoration: underline
 			.services-title
 				text-decoration: underline
-			// .services-media
 	.services-media
 		display: inline-block
 		width: 180px
@@ -107,9 +106,11 @@
 	color: #606060
 .detail
 	margin-bottom: 15px
-	font-size: 16px
+	font-size: 15px
 	line-height: 1.4 
 	font-style: italic
+	p
+		margin-bottom: 10px
 .send
 	display: block
 	padding: 5px 0
@@ -135,6 +136,8 @@
 .select-wrap
 	margin-bottom: 20px
 	text-align: center
+	position: relative
+	z-index: 999
 	.select
 		margin-left: 20px
 		&:first-child
@@ -209,11 +212,31 @@
 		left: 45px
 		z-index: 666
 		cursor: pointer
+	.gallery-back-home
+		+s($s-back-home)
+		position: absolute
+		top: 25px
+		left: 45px
+		z-index: 666
+		cursor: pointer
 	.gallery-item
 		width: 100%
 		height: 380px
 		+cover
 		box-shadow: inset 0px 2px 6px rgba(0,0,0,.13)
+		.gallery-item-title
+			width: 100%
+			position: absolute
+			top: 10px
+			color: #000 
+			font-size: 32px
+			text-transform: uppercase
+			text-align: center
+			+helveticaCyBold
+			.gallery-item-title-in
+				display: inline-block
+				padding: 0 5px
+				background: #FFF
 	.gallery-prev, .gallery-next
 		position: absolute
 		top: 50%

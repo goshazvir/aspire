@@ -44,7 +44,10 @@ head.ready(function() {
 		// controlsContainer: ".slider",
 		useCSS: false,
 		controlNav: false,
-		slideshow: false
+		slideshow: true,
+		animationLoop: true,  
+		slideshowSpeed: 7000,
+		animationSpeed: 600, 
 	});
 	$('.gallery-prev').on('click', function(){
 	    $('.js-flexslider').flexslider('prev')
