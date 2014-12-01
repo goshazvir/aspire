@@ -53,6 +53,24 @@
 		.social-item
 			width: 136px
 			margin-left: 26px
+	&.m-mod
+		margin-bottom: 0
+		.fb
+			border-bottom: 4px solid #335196
+			line-height: 30px
+			box-sizing: border-box
+		.vk
+			border-bottom: 4px solid #365881
+			line-height: 30px
+			box-sizing: border-box
+		.tw
+			border-bottom: 4px solid #28bef0
+			line-height: 30px
+			box-sizing: border-box
+		.gp
+			border-bottom: 4px solid #cb412e
+			line-height: 30px
+			box-sizing: border-box
 	.social-item
 		display: inline-block
 		vertical-align: middle
@@ -132,6 +150,9 @@
 	&:active
 		position: relative
 		top: 1px
+	&.m-mod
+		height: 35px
+		line-height: 35px
 
 // SELECT
 // ===============================================
@@ -209,6 +230,15 @@
 	height: 380px
 	overflow: hidden
 	position: relative
+	&.m-noslider
+		.gallery-item
+			+cover
+			background-position: 50% bottom
+	&.m-content
+		.gallery-prev
+			left: 10px
+		.gallery-next
+			right: 10px
 	.gallery-back
 		+s($s-back)
 		position: absolute
@@ -218,6 +248,13 @@
 		cursor: pointer
 	.gallery-back-home
 		+s($s-back-home)
+		position: absolute
+		top: 25px
+		left: 45px
+		z-index: 666
+		cursor: pointer
+	.gallery-back-privileges
+		+s($s-back-privileges)
 		position: absolute
 		top: 25px
 		left: 45px
@@ -267,6 +304,11 @@
 	position: relative
 	&.m-small
 		height: 385px
+	.map-social
+		width: 100%
+		position: absolute
+		bottom: 40px
+		z-index: 666
 	.map-note
 		width: 100%
 		position: absolute
@@ -294,5 +336,15 @@
 		height: 535px
 		overflow: hidden
 		img
-			max-width: 100% 
+			max-width: 100%
+
+.part
+	margin-top: 110px
+	.part-note
+		margin-bottom: 10px
+		font-size: 16px
+		font-style: italic
+	// .part-img
+		// img
+
 		

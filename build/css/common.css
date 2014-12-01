@@ -3263,7 +3263,7 @@ Copyright (c) 2014 Daniel Eden
 
 .i-tw {
   background-image: url("../img/sprite.png");
-  background-position: -236px -22px;
+  background-position: -209px -44px;
   width: 21px;
   height: 16px;
 }
@@ -3531,6 +3531,34 @@ a:hover {
   margin-left: 26px;
 }
 
+.social.m-mod {
+  margin-bottom: 0;
+}
+
+.social.m-mod .fb {
+  border-bottom: 4px solid #335196;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+
+.social.m-mod .vk {
+  border-bottom: 4px solid #365881;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+
+.social.m-mod .tw {
+  border-bottom: 4px solid #28bef0;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+
+.social.m-mod .gp {
+  border-bottom: 4px solid #cb412e;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+
 .social .social-item {
   display: inline-block;
   vertical-align: middle;
@@ -3659,6 +3687,11 @@ a:hover {
   top: 1px;
 }
 
+.send.m-mod {
+  height: 35px;
+  line-height: 35px;
+}
+
 .select-wrap {
   margin-bottom: 20px;
   text-align: center;
@@ -3716,7 +3749,7 @@ a:hover {
   top: 20px;
   right: 13px;
   background-image: url("../img/sprite.png");
-  background-position: -262px -22px;
+  background-position: -455px -22px;
   width: 13px;
   height: 10px;
 }
@@ -3764,9 +3797,24 @@ a:hover {
   position: relative;
 }
 
+.gallery.m-noslider .gallery-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-position: 50% bottom;
+}
+
+.gallery.m-content .gallery-prev {
+  left: 10px;
+}
+
+.gallery.m-content .gallery-next {
+  right: 10px;
+}
+
 .gallery .gallery-back {
   background-image: url("../img/sprite.png");
-  background-position: -209px 0px;
+  background-position: -236px -22px;
   width: 214px;
   height: 17px;
   position: absolute;
@@ -3781,6 +3829,18 @@ a:hover {
   background-position: 0px -78px;
   width: 157px;
   height: 18px;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+  z-index: 666;
+  cursor: pointer;
+}
+
+.gallery .gallery-back-privileges {
+  background-image: url("../img/sprite.png");
+  background-position: -209px 0px;
+  width: 266px;
+  height: 17px;
   position: absolute;
   top: 25px;
   left: 45px;
@@ -3832,7 +3892,7 @@ a:hover {
 
 .gallery .gallery-prev {
   background-image: url("../img/sprite.png");
-  background-position: -41px 0px;
+  background-position: 0px 0px;
   width: 37px;
   height: 73px;
   left: 30px;
@@ -3840,7 +3900,7 @@ a:hover {
 
 .gallery .gallery-next {
   background-image: url("../img/sprite.png");
-  background-position: 0px 0px;
+  background-position: -42px 0px;
   width: 36px;
   height: 73px;
   right: 30px;
@@ -3857,6 +3917,13 @@ a:hover {
 
 .map.m-small {
   height: 385px;
+}
+
+.map .map-social {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  z-index: 666;
 }
 
 .map .map-note {
@@ -3903,4 +3970,14 @@ a:hover {
 
 .map .map-in img {
   max-width: 100%;
+}
+
+.part {
+  margin-top: 110px;
+}
+
+.part .part-note {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-style: italic;
 }

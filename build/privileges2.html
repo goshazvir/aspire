@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>privileges2 </title>
+    <meta charset="utf-8">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  </head>
+  <body>
+    <div class="out">
+      <header class="header m-mod">
+        <div class="header-in"><a href="#" class="logo">Aspire</a>
+          <nav><a href="#">компания</a><a href="privileges.html" class="is-active pulse animated s05">Привилегии</a><a href="#">услуги</a><a href="#">Newsletter</a><a href="#">Обратная связь</a></nav>
+        </div>
+      </header>
+      <div class="page">
+        <div class="gallery m-noslider"><a href="uslugi1.html" class="gallery-back-privileges fadeIn animated s15"></a>
+          <div style="background-image: url(img/img31.jpg);" class="gallery-item"></div>
+        </div>
+        <div class="page-small">
+          <div class="page-l m-margin">
+            <div class="page-l-content fadeIn animated s2">
+              <h1>путешествие на чукотку</h1>
+              <div class="content">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <div class="gallery m-content">
+                  <div class="js-flexslider">
+                    <div class="js-flexslider-in">
+                      <div style="background-image: url(img/content2.jpg);" class="gallery-item"></div>
+                      <div style="background-image: url(img/slide21.jpg);" class="gallery-item"></div>
+                    </div>
+                  </div>
+                  <div class="gallery-prev"></div>
+                  <div class="gallery-next"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.</p>
+              </div>
+              <h1>место на карте</h1>
+            </div>
+            <div class="page-l-sidebar m-margin bounceInDown animated s15">
+              <div class="detail m-small">
+                <p>Подробности о данном предложении вы можете узнать по телефону: <br>8 800 000 00 00</p><a href="#" class="send m-mod">заказать</a>
+              </div>
+              <div class="part">
+                <div class="part-note">Наш партнер —<br> Diamond Ventures</div>
+                <div class="part-img"><img src="img/stamp.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <div class="map-note">
+            <div class="map-note-in">
+              <div class="map-note-span">Открыть карту в&nbsp;</div><a href="https://maps.yandex.ua/-/CVfn4-Ng" target="_blank" class="map-note-link">Яндексе</a>
+              <div class="map-note-span">или&nbsp;</div><a href="https://www.google.com.ua/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/@55.749792,37.632495,9z/data=!3m1!4b1!4m2!3m1!1s0x46b54afc73d4b0c9:0x3d44d6cc5757cf4c" target="_blank" class="map-note-link">Google Maps</a>
+            </div>
+          </div>
+          <div class="map-social">
+            <ul class="social m-mod fadeIn animated s2">
+              <li class="social-item"><a href="#" class="social-link fb"><i class="ico i-fb"></i><span>лайк</span></a></li>
+              <li class="social-item"><a href="#" class="social-link vk"><i class="ico i-vk"></i><span>нравится</span></a></li>
+              <li class="social-item"><a href="#" class="social-link tw"><i class="ico i-tw"></i><span>ретвит</span></a></li>
+              <li class="social-item"><a href="#" class="social-link gp"><i class="ico i-gp"></i><span>+ 1</span></a></li>
+            </ul>
+          </div>
+          <div class="map-in">
+            <div id="my-map" class="map-item"></div>
+            <script>
+              // When the window has finished loading create our google map below
+              google.maps.event.addDomListener(window, 'load', init);
+              function init() {
+              		var mapOptions = {
+              				scrollwheel: false,
+              				zoom: 11,
+              				disableDefaultUI: true,
+              				center: new google.maps.LatLng(55.747473, 37.607776)
+              		};
+              		var mapElement = document.getElementById('my-map');
+              		var map = new google.maps.Map(mapElement, mapOptions);
+              
+              		var image = 'img/map-label.png';
+              		var myLatLng = new google.maps.LatLng(55.747473, 37.607776);
+              		var beachMarker = new google.maps.Marker({
+              		    position: myLatLng,
+              		    map: map,
+              		    icon: image
+              		});
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script data-headjs-load="js/init.js" src="js/lib/head.js"></script>
+  </body>
+</html>

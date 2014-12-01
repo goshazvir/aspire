@@ -1,0 +1,95 @@
+- var titleMod = { title: 'privileges2' }; 
+- var session = { locale: '' }
+
+doctype html
+
+html
+	include includes/head.jade
+	body
+		.out
+				header.header.m-mod
+					.header-in
+						a.logo(href="#") Aspire
+						nav
+							a(href="#") компания
+							a(href="privileges.html").is-active.pulse.animated.s05 Привилегии
+							a(href="#") услуги
+							a(href="#") Newsletter
+							a(href="#") Обратная связь
+				.page
+					.gallery.m-noslider
+						a.gallery-back-privileges.fadeIn.animated.s15(href="uslugi1.html")
+						.gallery-item(style='background-image: url(img/img31.jpg);')
+
+					.page-small
+						.page-l.m-margin
+							.page-l-content.fadeIn.animated.s2
+								h1 путешествие на чукотку
+								.content
+									p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+									.gallery.m-content
+										.js-flexslider
+											.js-flexslider-in
+												.gallery-item(style='background-image: url(img/content2.jpg);')
+												.gallery-item(style='background-image: url(img/slide21.jpg);')
+										.gallery-prev
+										.gallery-next
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
+								h1 место на карте
+							.page-l-sidebar.m-margin.bounceInDown.animated.s15
+								.detail.m-small
+									p Подробности о данном предложении вы можете узнать по телефону: <br>8 800 000 00 00
+									a(href="#").send.m-mod заказать
+								.part
+									.part-note Наш партнер —<br> Diamond Ventures
+									.part-img
+										img(src="img/stamp.jpg", alt="")
+					.map
+						.map-note
+							.map-note-in
+								.map-note-span Открыть карту в&nbsp;
+								a(href="https://maps.yandex.ua/-/CVfn4-Ng", target="_blank").map-note-link Яндексе
+								.map-note-span или&nbsp;
+								a(href="https://www.google.com.ua/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/@55.749792,37.632495,9z/data=!3m1!4b1!4m2!3m1!1s0x46b54afc73d4b0c9:0x3d44d6cc5757cf4c", target="_blank").map-note-link Google Maps
+						.map-social
+							ul.social.m-mod.fadeIn.animated.s2
+								li.social-item
+									a(href="#").social-link.fb
+										i.ico.i-fb
+										span лайк
+								li.social-item
+									a(href="#").social-link.vk
+										i.ico.i-vk
+										span нравится
+								li.social-item
+									a(href="#").social-link.tw
+										i.ico.i-tw
+										span ретвит
+								li.social-item
+									a(href="#").social-link.gp
+										i.ico.i-gp
+										span + 1
+						.map-in
+							#my-map.map-item
+							script.
+								// When the window has finished loading create our google map below
+								google.maps.event.addDomListener(window, 'load', init);
+								function init() {
+										var mapOptions = {
+												scrollwheel: false,
+												zoom: 11,
+												disableDefaultUI: true,
+												center: new google.maps.LatLng(55.747473, 37.607776)
+										};
+										var mapElement = document.getElementById('my-map');
+										var map = new google.maps.Map(mapElement, mapOptions);
+
+										var image = 'img/map-label.png';
+										var myLatLng = new google.maps.LatLng(55.747473, 37.607776);
+										var beachMarker = new google.maps.Marker({
+										    position: myLatLng,
+										    map: map,
+										    icon: image
+										});
+								}
+		script(data-headjs-load='js/init.js', src='js/lib/head.js')
