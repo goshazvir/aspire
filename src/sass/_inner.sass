@@ -370,7 +370,7 @@
 // ===============================================
 .news
 	.news-title
-		margin: 10px 0 5px
+		margin: 10px 0
 	.news-items
 		font-size: 14px
 		margin-left: -20px
@@ -390,7 +390,82 @@
 		transition: all 0.2s ease
 		&:hover
 			opacity: 0.4
-			transition: all 0.2s ease 
-
+			transition: all 0.2s ease
+	.news-media
+		width: 300px
+		height: 165px
+		overflow: hidden
+		// img
+	.news-content
+		padding: 10px
+	.news-item-title
+		font-size: 15px
+		text-transform: uppercase
+		color: #000
+		+narrowBold
+	.news-meta
+		font-size: 14px
+		font-style: italic
+	.news-date
+		font-size: 14px
+		font-style: italic
+	.news-descr
+		margin: 15px 0
+		font-size: 14px
+	.news-call
+		font-size: 14px
+		color: #f11764
+// enter
+// ===============================================
+.enter
+	padding: 10px
+	background: #fff 
+	.enter-in
+		@extend %wrap
+		text-align: center
+	.enter-title
+		margin-right: 15px
+		display: inline-block
+		vertical-align: middle
+		font-size: 24px
+		text-transform: uppercase
+		color: #2c2d2f 
+	.enter-form
+		display: inline-block
+		vertical-align: middle
+		position: relative
+	.enter-form-input
+		padding: 0 10px
+		border-radius: 3px
+		background-clip: padding-box
+		background-color: #fff
+		box-shadow: inset 1px 3px 5px rgba(0,0,0,.05), inset 0 0 6px #dfe2e7
+		outline: none
+		font-size: 28px
+		word-spacing: 300% 
+	.enter-form-btn
+		width: 76px
+		padding: 6px 0px
+		position: absolute
+		right: 0
+		top: -2px
+		margin-right: -76px
+		border-radius: 4px 4px 4px 0
+		background-clip: padding-box
+		background-color: #ff4c73
+		border-left: 2px solid #e13867
+		border-bottom: 3px solid #e13867
+		font-size: 20px
+		+helveticaCyPlain
+		color: #FFF
+		text-transform: uppercase
+		text-decoration: none
+		transition: all 0.2s ease
+		&:hover
+			opacity: 0.8
+			transition: all 0.2s ease
+		&:active
+			opacity: 1
+			background: #e13867 
 
 		

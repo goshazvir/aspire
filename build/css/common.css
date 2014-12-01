@@ -3275,7 +3275,7 @@ Copyright (c) 2014 Daniel Eden
   height: 17px;
 }
 
-.page .page-normal {
+.page .page-normal, .enter .enter-in {
   width: 940px;
   padding: 0 10px;
   margin-left: auto;
@@ -4022,7 +4022,7 @@ a:hover {
 }
 
 .news .news-title {
-  margin: 10px 0 5px;
+  margin: 10px 0;
 }
 
 .news .news-items {
@@ -4064,4 +4064,112 @@ a:hover {
   opacity: 0.4;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.news .news-media {
+  width: 300px;
+  height: 165px;
+  overflow: hidden;
+}
+
+.news .news-content {
+  padding: 10px;
+}
+
+.news .news-item-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.news .news-meta {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.news .news-date {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.news .news-descr {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.news .news-call {
+  font-size: 14px;
+  color: #f11764;
+}
+
+.enter {
+  padding: 10px;
+  background: #fff;
+}
+
+.enter .enter-in {
+  text-align: center;
+}
+
+.enter .enter-title {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #2c2d2f;
+}
+
+.enter .enter-form {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.enter .enter-form-input {
+  padding: 0 10px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background-color: #fff;
+  box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.05), inset 0 0 6px #dfe2e7;
+  outline: none;
+  font-size: 28px;
+  word-spacing: 300%;
+}
+
+.enter .enter-form-btn {
+  width: 76px;
+  padding: 6px 0px;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  margin-right: -76px;
+  border-radius: 4px 4px 4px 0;
+  background-clip: padding-box;
+  background-color: #ff4c73;
+  border-left: 2px solid #e13867;
+  border-bottom: 3px solid #e13867;
+  font-size: 20px;
+  font-family: "HelveticaCYPlain", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.enter .enter-form-btn:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.enter .enter-form-btn:active {
+  opacity: 1;
+  background: #e13867;
 }
