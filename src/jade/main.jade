@@ -1,0 +1,27 @@
+- var titleMod = { title: 'main' }; 
+- var session = { locale: '' }
+
+doctype html
+
+html
+	include includes/head.jade
+	body
+		.out
+				header.header.m-mod
+					.header-in
+						a.logo(href="#") Aspire
+						nav
+							a(href="#") компания
+							a(href="privileges.html") Привилегии
+							a(href="#") услуги
+							a(href="#") Newsletter
+							a(href="#") Обратная связь
+				.page
+					.gallery.m-noslider
+						a.gallery-back-privileges.fadeIn.animated.s15(href="uslugi1.html")
+						.gallery-item(style='background-image: url(img/img31.jpg);')
+
+					.page-small
+						.page-l.m-main
+							|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, unde, quaerat nesciunt optio dolorem ipsam tenetur cumque laudantium, iusto aliquam repellendus a, provident ad consequuntur explicabo perferendis aperiam sequi veniam.
+		script(data-headjs-load='js/init.js', src='js/lib/head.js')
