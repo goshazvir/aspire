@@ -3249,33 +3249,40 @@ Copyright (c) 2014 Daniel Eden
 
 .i-fb {
   background-image: url("../img/sprite.png");
-  background-position: -83px -49px;
+  background-position: -126px -78px;
   width: 10px;
   height: 19px;
 }
 
 .i-vk {
   background-image: url("../img/sprite.png");
-  background-position: -98px -49px;
+  background-position: -83px -55px;
   width: 14px;
   height: 18px;
 }
 
 .i-tw {
   background-image: url("../img/sprite.png");
-  background-position: -209px -44px;
+  background-position: -206px -44px;
   width: 21px;
   height: 16px;
 }
 
 .i-gp {
   background-image: url("../img/sprite.png");
-  background-position: -209px -22px;
+  background-position: -206px -22px;
   width: 22px;
   height: 17px;
 }
 
-.header .header-in, .page .page-small {
+.page .page-normal {
+  width: 940px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .header-in, .page .page-small, .gallery .gallery-item .gallery-item-container {
   width: 860px;
   padding: 0 60px;
   margin-left: auto;
@@ -3346,7 +3353,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   background-image: url("../img/sprite.png");
-  background-position: -83px 0px;
+  background-position: 0px -78px;
   width: 121px;
   height: 44px;
   text-indent: -9999px;
@@ -3386,6 +3393,10 @@ nav a:hover, nav span:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   opacity: 0.8;
+}
+
+.page.m-main {
+  background: #e1e3e6;
 }
 
 .page .page-small {
@@ -3643,6 +3654,10 @@ a:hover {
   color: #606060;
 }
 
+.note.m-m0 {
+  margin-bottom: 0;
+}
+
 .detail {
   margin-bottom: 15px;
   font-size: 15px;
@@ -3749,7 +3764,7 @@ a:hover {
   top: 20px;
   right: 13px;
   background-image: url("../img/sprite.png");
-  background-position: -455px -22px;
+  background-position: -452px -22px;
   width: 13px;
   height: 10px;
 }
@@ -3814,7 +3829,7 @@ a:hover {
 
 .gallery .gallery-back {
   background-image: url("../img/sprite.png");
-  background-position: -236px -22px;
+  background-position: -233px -22px;
   width: 214px;
   height: 17px;
   position: absolute;
@@ -3826,7 +3841,7 @@ a:hover {
 
 .gallery .gallery-back-home {
   background-image: url("../img/sprite.png");
-  background-position: 0px -78px;
+  background-position: 0px -127px;
   width: 157px;
   height: 18px;
   position: absolute;
@@ -3838,7 +3853,7 @@ a:hover {
 
 .gallery .gallery-back-privileges {
   background-image: url("../img/sprite.png");
-  background-position: -209px 0px;
+  background-position: -206px 0px;
   width: 266px;
   height: 17px;
   position: absolute;
@@ -3855,6 +3870,30 @@ a:hover {
   background-size: cover;
   background-position: 50% 50%;
   box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.13);
+}
+
+.gallery .gallery-item .gallery-item-container {
+  height: 100%;
+  position: relative;
+}
+
+.gallery .gallery-item .gallery-item-note {
+  width: 250px;
+  padding: 20px;
+  background: #FFF;
+  color: #000;
+  position: absolute;
+  top: 45px;
+  left: 60px;
+}
+
+.gallery .gallery-item .gallery-item-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "HelveticaCYBold", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .gallery .gallery-meta {
@@ -3980,4 +4019,49 @@ a:hover {
   margin-bottom: 10px;
   font-size: 16px;
   font-style: italic;
+}
+
+.news .news-title {
+  margin: 10px 0 5px;
+}
+
+.news .news-items {
+  font-size: 14px;
+  margin-left: -20px;
+}
+
+.news .news-items:before, .news .news-items:after {
+  content: "";
+  display: table;
+}
+
+.news .news-items:after {
+  clear: both;
+}
+
+.news .news-item {
+  width: 300px;
+  height: 365px;
+  float: left;
+  background: #FFF;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.news .news-more {
+  background-image: url("../img/sprite.png");
+  background-position: -83px 0px;
+  width: 118px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.news .news-more:hover {
+  opacity: 0.4;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
