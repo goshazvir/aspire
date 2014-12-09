@@ -55,22 +55,6 @@
 			margin-left: 26px
 	&.m-mod
 		margin-bottom: 0
-		.fb
-			border-bottom: 4px solid #335196
-			line-height: 30px
-			box-sizing: border-box
-		.vk
-			border-bottom: 4px solid #365881
-			line-height: 30px
-			box-sizing: border-box
-		.tw
-			border-bottom: 4px solid #28bef0
-			line-height: 30px
-			box-sizing: border-box
-		.gp
-			border-bottom: 4px solid #cb412e
-			line-height: 30px
-			box-sizing: border-box
 	.social-item
 		display: inline-block
 		vertical-align: middle
@@ -80,32 +64,73 @@
 			margin-left: 0
 	.social-link
 		display: block
-		height: 38px
-		line-height: 34px
+		// height: 38px
+		// line-height: 34px
+		line-height: 18px
+		padding: 10px 10px
 		border-radius: 4px
 		text-align: center
 		text-decoration: none
-		transition: all 0.2s ease
-		&:hover
-			opacity: 0.8
-			transition: all 0.2s ease
+		transition: all 0.1s ease
+		// &:hover
+			// opacity: 0.8
+			// transition: all 0.5s ease
 		&:active
 			position: relative
-			top: 1px
+			top: 2px
 		&.fb
-			background: #3757a1
+			$bg: #405fa7
+			$shadow: #335196
+			background: $bg
+			box-shadow: 0 4px 0 $shadow
+			&:hover
+				background: lighten($bg, 10%)
+				box-shadow: 0 4px 0 lighten($shadow, 10%)
+			&:active
+				background: darken($bg, 10%)
+				box-shadow: 0 2px 0 darken($shadow, 10%)
 		&.vk
-			background: #3a5f8b
+			$bg: #406591
+			$shadow: #365881
+			background: $bg
+			box-shadow: 0 4px 0 $shadow
+			&:hover
+				background: lighten($bg, 10%)
+				box-shadow: 0 4px 0 lighten($shadow, 10%)
+			&:active
+				background: darken($bg, 10%)
+				box-shadow: 0 2px 0 darken($shadow, 10%)
 			.ico
-				margin-top: 2px
+				position: relative
+				top: 2px
 		&.tw
-			background: #33ccff
+			$bg: #33ccff
+			$shadow: #28bef0
+			background: $bg
+			box-shadow: 0 4px 0 $shadow
+			&:hover
+				background: lighten($bg, 10%)
+				box-shadow: 0 4px 0 lighten($shadow, 10%)
+			&:active
+				background: darken($bg, 10%)
+				box-shadow: 0 2px 0 darken($shadow, 10%)
 			.ico
-				margin-top: 5px
+				position: relative
+				top: 2px
 		&.gp
-			background: #dc4b37
+			$bg: #dc4b37
+			$shadow: #cb412e
+			background: $bg
+			box-shadow: 0 4px 0 $shadow
+			&:hover
+				background: lighten($bg, 10%)
+				box-shadow: 0 4px 0 lighten($shadow, 10%)
+			&:active
+				background: darken($bg, 10%)
+				box-shadow: 0 2px 0 darken($shadow, 10%)
 			.ico
-				margin-top: 5px
+				position: relative
+				top: 2px
 		.ico
 			margin-right: 10px
 			display: inline-block
@@ -139,7 +164,8 @@
 	border-radius: 5px
 	background-color: #ef2a56
 	background-image: linear-gradient(bottom, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%)
-	border-bottom: 5px solid #d51741 
+	// border-bottom: 5px solid #d51741
+	box-shadow: 0 5px 0 #d51741
 	+narrowBold
 	font-size: 16px
 	text-transform: uppercase
@@ -151,7 +177,8 @@
 		background-image: linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,.18) 100%)
 	&:active
 		position: relative
-		top: 1px
+		top: 2px
+		box-shadow: 0 3px 0 #d51741
 	&.m-mod
 		height: 35px
 		line-height: 35px
@@ -445,27 +472,34 @@
 		word-spacing: 300% 
 	.enter-form-btn
 		width: 76px
-		padding: 6px 0px
+		padding: 6px 0px 7px
 		position: absolute
 		right: 0
-		top: -2px
-		margin-right: -76px
+		top: -3px
+		// 76
+		margin-right: -74px
 		border-radius: 4px 4px 4px 0
 		background-clip: padding-box
-		background-color: #ff4c73
-		border-left: 2px solid #e13867
-		border-bottom: 3px solid #e13867
+		$bg: #ff4c73
+		$shadow: #e13867
+		background-color: $bg
+		border-left: 2px solid $shadow
+		// border-bottom: 3px solid #e13867
+		box-shadow: 0 3px 0 $shadow
 		font-size: 20px
 		+helveticaCyPlain
 		color: #FFF
 		text-transform: uppercase
 		text-decoration: none
-		transition: all 0.2s ease
+		transition: all 0.1s ease
 		&:hover
-			opacity: 0.8
-			transition: all 0.2s ease
+			background: darken($bg, 5%)
+			box-shadow: 0 3px 0 darken($shadow, 5%)
+			border-color: darken($shadow, 5%)
 		&:active
 			opacity: 1
-			background: #e13867 
+			// background: #e13867
+			box-shadow: 0 2px 0 #e13867
+			top: -2px
 
 		
