@@ -4156,6 +4156,7 @@ a:hover {
 }
 
 .enter .enter-form-input {
+  width: 190px;
   padding: 0 10px;
   border-radius: 3px;
   background-clip: padding-box;
@@ -4163,7 +4164,47 @@ a:hover {
   box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.05), inset 0 0 6px #dfe2e7;
   outline: none;
   font-size: 28px;
-  word-spacing: 300%;
+  text-align: center;
+}
+
+.enter .enter-form-input::-webkit-input-placeholder {
+  line-height: 48px;
+  letter-spacing: 0.38em;
+  color: #75787e;
+}
+
+.enter .enter-form-input::-moz-placeholder {
+  line-height: 48px;
+  letter-spacing: 0.38em;
+  color: #75787e;
+}
+
+.enter .enter-form-input:-ms-input-placeholder {
+  line-height: 48px;
+  letter-spacing: 0.38em;
+  color: #75787e;
+}
+
+.enter .enter-form-input::placeholder {
+  line-height: 48px;
+  letter-spacing: 0.38em;
+  color: #75787e;
+}
+
+.enter .enter-form-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.enter .enter-form-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.enter .enter-form-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.enter .enter-form-input:focus::placeholder {
+  color: transparent;
 }
 
 .enter .enter-form-btn {
