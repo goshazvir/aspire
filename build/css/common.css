@@ -3370,6 +3370,7 @@ body.m-main {
 }
 
 nav {
+  width: 695px;
   display: inline-block;
   vertical-align: middle;
 }
