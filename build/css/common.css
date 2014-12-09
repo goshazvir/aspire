@@ -3389,9 +3389,6 @@ nav a, nav span {
 }
 
 nav a.is-active, nav span.is-active {
-  font-family: "HelveticaCYBold", Helvetica, sans-serif;
-  font-weight: normal;
-  font-style: normal;
   text-decoration: underline;
 }
 
