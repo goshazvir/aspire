@@ -3554,30 +3554,6 @@ a:hover {
   margin-bottom: 0;
 }
 
-.social.m-mod .fb {
-  border-bottom: 4px solid #335196;
-  line-height: 30px;
-  box-sizing: border-box;
-}
-
-.social.m-mod .vk {
-  border-bottom: 4px solid #365881;
-  line-height: 30px;
-  box-sizing: border-box;
-}
-
-.social.m-mod .tw {
-  border-bottom: 4px solid #28bef0;
-  line-height: 30px;
-  box-sizing: border-box;
-}
-
-.social.m-mod .gp {
-  border-bottom: 4px solid #cb412e;
-  line-height: 30px;
-  box-sizing: border-box;
-}
-
 .social .social-item {
   display: inline-block;
   vertical-align: middle;
@@ -3591,52 +3567,93 @@ a:hover {
 
 .social .social-link {
   display: block;
-  height: 38px;
-  line-height: 34px;
+  line-height: 18px;
+  padding: 10px 10px;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.social .social-link:hover {
-  opacity: 0.8;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .social .social-link:active {
   position: relative;
-  top: 1px;
+  top: 2px;
 }
 
 .social .social-link.fb {
-  background: #3757a1;
+  background: #405fa7;
+  box-shadow: 0 4px 0 #335196;
+}
+
+.social .social-link.fb:hover {
+  background: #5a7ac0;
+  box-shadow: 0 4px 0 #4067bc;
+}
+
+.social .social-link.fb:active {
+  background: #324b82;
+  box-shadow: 0 2px 0 #263d70;
 }
 
 .social .social-link.vk {
-  background: #3a5f8b;
+  background: #406591;
+  box-shadow: 0 4px 0 #365881;
+}
+
+.social .social-link.vk:hover {
+  background: #527fb2;
+  box-shadow: 0 4px 0 #4572a5;
+}
+
+.social .social-link.vk:active {
+  background: #304d6e;
+  box-shadow: 0 2px 0 #27405d;
 }
 
 .social .social-link.vk .ico {
-  margin-top: 2px;
+  position: relative;
+  top: 2px;
 }
 
 .social .social-link.tw {
   background: #33ccff;
+  box-shadow: 0 4px 0 #28bef0;
+}
+
+.social .social-link.tw:hover {
+  background: #66d9ff;
+  box-shadow: 0 4px 0 #58cff3;
+}
+
+.social .social-link.tw:active {
+  background: #00bfff;
+  box-shadow: 0 2px 0 #0fa8d6;
 }
 
 .social .social-link.tw .ico {
-  margin-top: 5px;
+  position: relative;
+  top: 2px;
 }
 
 .social .social-link.gp {
   background: #dc4b37;
+  box-shadow: 0 4px 0 #cb412e;
+}
+
+.social .social-link.gp:hover {
+  background: #e47162;
+  box-shadow: 0 4px 0 #d86354;
+}
+
+.social .social-link.gp:active {
+  background: #bf3421;
+  box-shadow: 0 2px 0 #a13325;
 }
 
 .social .social-link.gp .ico {
-  margin-top: 5px;
+  position: relative;
+  top: 2px;
 }
 
 .social .social-link .ico {
@@ -3688,7 +3705,7 @@ a:hover {
   background-color: #ef2a56;
   background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 100%);
-  border-bottom: 5px solid #d51741;
+  box-shadow: 0 5px 0 #d51741;
   font-family: 'PT Sans Narrow Bold', sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -3707,7 +3724,8 @@ a:hover {
 
 .send:active {
   position: relative;
-  top: 1px;
+  top: 2px;
+  box-shadow: 0 3px 0 #d51741;
 }
 
 .send.m-mod {
@@ -4150,16 +4168,16 @@ a:hover {
 
 .enter .enter-form-btn {
   width: 76px;
-  padding: 6px 0px;
+  padding: 6px 0px 7px;
   position: absolute;
   right: 0;
-  top: -2px;
-  margin-right: -76px;
+  top: -3px;
+  margin-right: -74px;
   border-radius: 4px 4px 4px 0;
   background-clip: padding-box;
   background-color: #ff4c73;
   border-left: 2px solid #e13867;
-  border-bottom: 3px solid #e13867;
+  box-shadow: 0 3px 0 #e13867;
   font-size: 20px;
   font-family: "HelveticaCYPlain", Helvetica, sans-serif;
   font-weight: normal;
@@ -4167,17 +4185,18 @@ a:hover {
   color: #FFF;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .enter .enter-form-btn:hover {
-  opacity: 0.8;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  background: #ff3362;
+  box-shadow: 0 3px 0 #de2257;
+  border-color: #de2257;
 }
 
 .enter .enter-form-btn:active {
   opacity: 1;
-  background: #e13867;
+  box-shadow: 0 2px 0 #e13867;
+  top: -2px;
 }
